@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+@font-face{
+    font-family: "MuseoSans";
+    src: url("fontes/museosans.ttf") format("truetype");
+}
+
+@font-face{
+    font-family: "FuturaPT";
+    src: url("fontes/FuturaPT.otf") format("opentype");
+}
+
+body, html{
+    width: 100%;
+    height: auto;
+    background: #f1f3f8;
+    
+}
+
+div#content{
+    width: 53%;
+    /*margin: 0 auto;*/
+    position: relative;
+}
+
+/* TITULO DA PAGINA */
+header{
+    padding: 30px 10;
+    height: 37px;
+    left: 100%;
+    color: #333;
+    text-transform: uppercase;
+    font-family: MuseoSans;
+    font-size: 22px;
+    letter-spacing: 3px;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    text-align: right;
+}
+
+/* LISTA */
+div#subheader{
+    width: 188%;
+    display: block;
+    background: #21273d;
+    text-align: center;
+    height: 60px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .2);
+    z-index: 1;
+    position: relative;
+}
+
+div#subheader li{
+    display: inline-block;
+}
+
+div#subheader li a{
+    font-family: MuseoSans;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
+    height: 14px;
+    padding: 23px 12px;
+    display: block;
+    transition: .4s;
+}
+
+/*div#subheader li a:hover{
+    color: #D29F4E;
+    background: #1c2133;
+}*/
+
+/* NOME E ADM  */
+header div#user{
+    float: left;
+    position: absolute;
+}
+
+header div#user span{
+    letter-spacing: 0;
+    font-size: 16px;
+    padding-top: 10px;
+    display: block;
+}
+
+header span.logo{
+    padding-top: 7px;
+    display: block;
+}
+
+/* BOTAO LOGOUT */
+header div#logout{
+    position: absolute;
+    top: 0;
+    left: 175%;
+}
+
+header div#logout button{
+    font-family: MuseoSans;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #333;
+    padding: 10px 18px;
+    background: #fff;
+    border: 0;
+    border-radius: 2px;
+    cursor: pointer;
+    border: 1px solid #d8d8d8;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);    
+}
+
+/* FUNDO BRANCO */
+div#tabelaUsuarios{
+    margin-top: 20px;
+    width: 188%;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+}
+
+/* PESQUISAR USUARIOS */
+div#tabelaUsuarios span.title{  
+    font-family: MuseoSans;
+    font-size: 30px;
+    padding: 20px 10px;
+    display: block;
+    color: #d29f4e;
+}
+
+/* ESPAÇAMENTO ENTRE AS LINHAS DA DIV */
+div#tabelaUsuarios form div#linha {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* LABEL */
+div#tabelaUsuarios form div#linha label{
+    font-family: FuturaPT;
+    font-size: 30px;
+    display: block;
+    margin-bottom: 15px;
+    color: #828282;
+    text-align: center;
+}
+
+/* INPUT */
+div#tabelaUsuarios form div#linha input{
+    background: #eee;
+    border: 2px solid #eee;
+    border-radius: 2px;
+    height: 11px;
+    padding: 15px 6px;
+    width: calc(10% - 16px);
+    text-align: center;
+}
+
+div#tabelaUsuarios form div#linha{
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+/* BOTÕES */
+div#tabelaUsuarios form div#button{
+    text-align: center;
+}
+
+/* ESTILIZANDO BOTÕES */
+div#tabelaUsuarios form div#button button{
+    margin-top: 12px;
+    font-family: MuseoSans;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    padding: 14px 40px;
+    background: #D29F4E;
+    border: 0;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+/* ESPAÇAMENTO BOTÕES */
+div#tabelaUsuarios.esqueci form div#button button{
+    margin-top: 50px;
+}
+
+div#tabelaUsuarios form div#button a{
+    display: block;
+    font-family: FuturaPT;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 8px;
+    color: #828282;
+}
+
+div#tabelaUsuarios form div#lista{
+    text-align: center;
+    font-size: 20px;
+    font-family: MuseoSans;
+}
+
+div#tabelaUsuarios form div#lista legend
+{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 0 1em;
+    border-collapse:collapse;
+    border: 1px solid black;
+}
+
+
+@media (max-width: 767px) {
+    header {
+        padding: 15px 10px;
+    }
+
+    div#subheader li a {
+        padding: 10px 12px;
+    }
+
+    header div#user span,
+    header span.logo,
+    header div#logout {
+        text-align: center; /* Centralizado */
+    }
+}

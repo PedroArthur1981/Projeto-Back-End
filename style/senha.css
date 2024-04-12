@@ -1,0 +1,29 @@
+@font-face{
+    font-family: "MuseoSans";
+    src: url("fontes/museosans.ttf") format("truetype");
+}
+
+@font-face{
+    font-family: "FuturaPT";
+    src: url("fontes/FuturaPT.otf") format("opentype");
+}
+.success-message {
+    color: green;
+    font-weight: bold;
+    text-align: center;
+    font: 260%;
+    font-size: 300%;
+    margin-top: 20px; /* Adjust as needed */
+  
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    font-size: 300%;
+    
+    
+    margin-top: 20px; /* Adjust as needed */
+}
+

@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+@font-face{
+    font-family: "MuseoSans";
+    src: url("fontes/museosans.ttf") format("truetype");
+}
+
+@font-face{
+    font-family: "FuturaPT";
+    src: url("fontes/FuturaPT.otf") format("opentype");
+}
+
+body, html{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #21273d 0%, #0d3138 100%);
+}
+
+/* CABEÇALHO CADASTRO */
+header{
+    padding: 30px 0;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: MuseoSans;
+    font-size: 22px;
+    letter-spacing: 3px;
+    background: #1c2133;
+    position: relative;
+    z-index: 2;
+}
+
+/*div#subheader{
+    width: 100%;
+    display: block;
+    background: #21273d;
+    text-align: center;
+    height: 60px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .2);
+    z-index: 1;
+    position: relative;
+}
+
+div#subheader li{
+    display: inline-block;
+}
+
+div#subheader li a{
+    font-family: MuseoSans;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
+    height: 14px;
+    padding: 23px 12px;
+    display: block;
+    transition: .4s;
+}
+
+div#subheader li a:hover{
+    color: #D29F4E;
+    background: #1c2133;
+}*/
+
+/* MENSAGEM PREENCHA TODOS OS CAMPOS */
+div#mensagem{
+    padding: 15px 0;
+    font-family: MuseoSans;
+    color: #fff;
+    background: #ffc36b;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: none;
+}
+
+div#mensagem.red{
+    background: #F90055;
+}
+
+/* FORMULARIO */
+div#formulario{
+    width: 670px;
+    height: 150px;
+    position: relative;
+    top: 50%;
+    left: 10%;
+    margin-top: calc(-500px + 48px);
+   
+}
+
+/* PARTE BRANCA ATRAS DO FORMULARIO */
+div#formulario form{
+    width:450px;
+    height: 1420px;
+    background: #fff;
+    border-radius: 5px;
+    padding: 30px 50px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, .3);
+    float: left;
+}
+
+/* ESPAÇAMENTO ENTRE AS LINHAS DA DIV */
+div#formulario form div#linha {
+    margin-bottom: 10px;
+}
+
+div#formulario form div#linha1 {
+    margin-bottom: 10px;
+}
+
+div#formulario form div#linha2 {
+    margin-bottom: 10px;
+}
+
+div#formulario form div#linha3 {
+    margin-bottom: 10px;
+}
+
+/* LABEL */
+div#formulario form div#linha label{
+    font-family: FuturaPT;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 5px;
+    color: #828282;
+}
+
+div#formulario form div#linha1 label{
+    font-family: FuturaPT;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 5px;
+    color: #828282;
+}
+
+div#formulario form div#linha2 label{
+    font-family: FuturaPT;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 5px;
+    color: #828282;
+}
+
+div#formulario form div#linha3 label{
+    font-family: FuturaPT;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 5px;
+    color: #828282;
+}
+
+/* INPUT */
+div#formulario form div#linha input{
+    background: #eee;
+    border: 2px solid #eee;
+    border-radius: 2px;
+    height: 11px;
+    padding: 15px 6px;
+    width: calc(100% - 16px);
+}
+
+div#formulario form div#linha1 input{
+    background: #eee;
+    border: 2px solid #eee;
+    border-radius: 2px;
+    height: 11px;
+    padding: 15px 6px;
+    width: calc(95% - 16px);
+}
+
+div#formulario form div#linha2 input{
+    background: #eee;
+    border: 2px solid #eee;
+    border-radius: 2px;
+    height: 11px;
+    padding: 15px 6px;
+    width: calc(94% - 16px);
+}
+
+/*div#formulario form div#linha3 select{
+    background: #eee;
+    border: 2px solid #eee;
+    border-radius: 2px;
+    height: 11px;
+    padding: 15px 6px;
+    width: calc(99% - 16px);
+}*/
+
+div#formulario form div#linha{
+    margin-bottom: 10px;
+}
+
+div#formulario form div#linha1{
+    margin-bottom: 10px;
+}
+
+div#formulario form div#linha2{
+    margin-bottom: 10px;
+}
+
+div#formulario form div#linha3{
+    margin-bottom: 10px;
+}
+
+/* BOTÕES */
+div#formulario form div#button{
+    text-align: center;
+}
+
+/* ESTILIZANDO BOTÕES */
+div#formulario form div#button button{
+    margin-top: 12px;
+    font-family: MuseoSans;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    padding: 14px 40px;
+    background: #D29F4E;
+    border: 0;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+/* ESPAÇAMENTO BOTÕES */
+div#formulario.esqueci form div#button button{
+    margin-top: 50px;
+}
+
+div#formulario form div#button a{
+    display: block;
+    font-family: FuturaPT;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 8px;
+    color: #828282;
+}
+
+/* JÁ POSSUI UMA CONTA */
+div#formulario div#textoLogin{
+    float: right;
+    width: 0px;
+    padding-top: 230px;
+}
+
+div#formulario div#textoLogin span.title{
+    font-family: MuseoSans;
+    font-size: 70px;
+    text-transform: uppercase;
+    
+    color: #5b5b68;
+    letter-spacing: 40px;
+    margin-bottom: 50px;
+}
+
+/* ACESSE AGORA */
+div#formulario div#textoLogin span.subtitle{
+    font-family: FuturaPT;
+    font-size: 40px;
+   
+    margin-bottom: 15px;
+    color: #8c8c8c;
+}
+
+/* BOTÃO ACESSE AGORA */
+div#formulario div#textoLogin button{
+    margin-top: 30px;
+    font-family: MuseoSans;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    padding: 20px 60px;
+    background: #0191AB;
+    border: 40;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#sexo{
+    height: 39px;
+    width: 92%;
+    border:none;
+    background-color:#ecf0f1;
+    margin: 4px;
+}
+
+@media (max-width: 767px) {
+    #header {
+        padding: 20px 0; /* Ajustado o padding */
+    }
+
+    div#formulario form {
+        padding: 30px 5%; /* Ajustado o padding nas laterais */
+    }
+
+    div#formulario form div#button button {
+        padding: 14px 10px; /* Ajustado o padding para melhor adaptação */
+    }
+}
+
+#resposta{
+    color: green;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "FuturaPT";
+    src: url("fontes/FuturaPT.otf") format("opentype");
+    text-align: center;   
+}
+
+
+
+
+
+
+
+
+
+
+

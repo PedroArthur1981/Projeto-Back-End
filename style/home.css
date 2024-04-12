@@ -1,0 +1,15 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.background-container {
+    background-image: url('https://images.app.goo.gl/un3AX2Z9QohzkWuC8');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff; /* Cor do texto para melhor legibilidade */
+}
